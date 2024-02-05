@@ -1,3 +1,8 @@
+/** 
+ * App styles for React Counter Project
+ */
+
+
 .App {
   text-align: center;
   height: 100%;
@@ -59,6 +64,7 @@
 .counterContainer {
   background-color: #a594b5;
   height: 100%;
+  font-size: 16px; /* Added font size to adjust for React 17 */
 }
 
 .count {
