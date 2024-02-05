@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import "../App.css";
 
-//Define initial state
+// Define initial state
 const initialState = 0;
 const reducer = (state, action) => {
   switch (action) {
@@ -9,6 +9,10 @@ const reducer = (state, action) => {
       return state + 1;
     case "decrement":
       return state - 1;
+    case "incrementBy5":
+      return state + 5;
+    case "decrementBy5":
+      return state - 5;
     case "reset":
       return initialState;
     default:
@@ -29,6 +33,12 @@ function Counter() {
       </button>
       <button className="counterbtn" onClick={() => dispatch("decrement")}>
         Decrement
+      </button>
+      <button className="counterbtn" onClick={() => dispatch("incrementBy5")}>
+        +5 Increment
+      </button>
+      <button className="counterbtn" onClick={() => dispatch("decrementBy5")}>
+        -5 Decrement
       </button>
       <button className="counterbtn" onClick={() => dispatch("reset")}>
         Reset
