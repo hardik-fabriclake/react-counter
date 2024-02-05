@@ -30,3 +30,4 @@ Built this app to practice and polish my HTML5, CSS3, Javascript-es6 and React S
 - VS Code
 - Surge
 - Github Actions
+# react-counter
